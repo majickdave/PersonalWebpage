@@ -14,143 +14,51 @@
 <!-- Navigation -->
 <nav class="w3-bar w3-black">
   <a href="https://www.musicmindcompany.com" class="w3-button w3-bar-item">MusicMind Inc.</a>
-  <a href="https://www.linkedin.com/in/datascienceinsight" class="w3-button w3-bar-item">Linkedin</a>
+<!--   <a href="https://www.linkedin.com/in/datascienceinsight" class="w3-button w3-bar-item">Linkedin</a> -->
   <a href="https://www.musicmindcompany.com/contact/" class="w3-button w3-bar-item">Contact</a>
 </nav>
 
 <section class="w3-container w3-center" style="max-width:600px">
-  <h1 class="w3-container w3-black">David Samuel's Portfolio</h2>
+  <h1 class="w3-container w3-white">David Samuel's Portfolio</h2>
     <img class="image" src="https://www.dropbox.com/s/u1dfelhcg707zzm/my_face.JPG?dl=1" alt="Portrait" style="width:25%"/>
     <h2 class="w3-wide">Data Architect </h2>
     <h3 class="w3-wide">Software Engineer</h3>
     <h4 class="w3-wide">Founder of MusicMind Inc.</h4>
-  <p class="w3-opacity"><i>Below are some video and iOS applications I've developed for my graduate program at SMU</i></p>
+  <p class="w3-opacity"><i>Below are some augmented video applications I've developed for my graduate program at SMU</i></p>
 
 </section>
 
-<style>
-table {
-    width: 100%;
-    background-color: #445588;
-    /*eliminate border*/
-    border-collapse: collapse;
-}
-
-
-
-td {
-    /*eliminate border*/
-    padding: 0;
-}
-
-
-</style>
-
-<script>
-
-// color class
-var RGB = function (r, g, b) {
-    this.r = r;
-    this.g = g;
-    this.b = b;
-};
-
-RGB.prototype.getHex = function(){
-    var r = this.r.toString(16);
-    if(r.length == 0) {
-        r =  "00";
-    } else if(r.length == 1) {
-        r = "0" + r;
-    } 
-
-    var g = this.g.toString(16);
-    if(g.length == 0) {
-        g =  "00";
-    } else if(g.length == 1) {
-        g = "0" + g;
-    } 
-
-    var b = this.b.toString(16);
-    if(b.length == 0) {
-        b =  "00";
-    } else if(b.length == 1) {
-        b = "0" + b;
-    } 
-
-    return r+g+b;
-};
-
-
-
-function createHTMLGradient(rows, cols, startColor, endColor){
-    var r1 = startColor.r;
-    var g1 = startColor.g;
-    var b1 = startColor.b;
-
-    var r2 = endColor.r;
-    var g2 = endColor.g;
-    var b2 = endColor.b;
-
-     var deltaR = (r2-r1)/(rows*cols);
-     var deltaG = (g2-g1)/(rows*cols);
-     var deltaB = (b2-b1)/(rows*cols);
-
-    var table = document.createElement('table');
-
-    for(var i=0, k=0; i<rows; i++){
-        var tr = document.createElement('tr');   
-        for(var j=0; j<cols; j++){
-            k++;
-
-            var td = document.createElement('td');
-
-             var r = Math.round(r1+deltaR*k);
-             var g = Math.round(g1+deltaG*k);
-             var b = Math.round(b1+deltaB*k);
-             td.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
-
-            var text = document.createTextNode('\u00a0');
-            td.appendChild(text);
-            tr.appendChild(td);
-        }
-        table.appendChild(tr);
-    }
-
-    table.style.border = '2px solid blue';
-    document.body.appendChild(table);
-}
-
-</script>
 </head>
 
 
 <body>
 
 <!-- Video -->
-<video width="400" autoplay loop muted>
+<video width="480" autoplay loop muted>
   <source src="https://www.dropbox.com/s/7lm1qcbodmtg9q7/short_viz.mp4?dl=1" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
-<video width="400" controls autoplay loop muted>
+<video width="480" controls autoplay loop muted>
   <source src="https://www.dropbox.com/s/4z1mvj0ipvrdexy/ascii_movie.mp4?dl=1" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
 <!-- MusicMind -->
-<iframe src="https://docs.google.com/presentation/d/1VrnpprugSjaYZdqVBUydUU1kX8XsYcxCDmAGM1tphs4/embed?start=true&loop=true&delayms=3000" frameborder="0" width="1401" height="1080" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/1VrnpprugSjaYZdqVBUydUU1kX8XsYcxCDmAGM1tphs4/embed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
-<video width="400" controls>
+<video width="480" controls>
   <source src="https://www.dropbox.com/s/v3oufis06alyojv/musicmind_movie.mp4?dl=1" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-white w3-xlarge">
-  <a href="https://www.facebook.com/musicmindcompany/"><i class="fa fa-facebook-official"></i></a>
-  <a href="https://www.linkedin.com/in/datascienceinsight"><i class="fa fa-linkedin"></i></a>
-<!--   <a href="#"><i class="fa fa-instagram"></i></a> -->
+  <a href="https://www.facebook.com/musicmindcompany/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.linkedin.com/in/datascienceinsight" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <a href="https://github.com/majickdave" target="_blank"><i class="fa fa-github"></i></a>
+
   <p class="w3-medium">
   Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">HTML and <i class="em em-heart"></i></a>
   </p>
