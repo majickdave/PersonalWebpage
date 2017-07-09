@@ -5,20 +5,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
 <title>The Personal Webpage of David Samuel</title>
 
 <!-- Navigation -->
 <nav class="w3-bar w3-black">
   <a href="#home" class="w3-button w3-bar-item">Home</a>
-  <a href="#band" class="w3-button w3-bar-item">Band</a>
-  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+  <a href="#company" class="w3-button w3-bar-item">MusicMind Inc.</a>
+  <a href="#linkedin" class="w3-button w3-bar-item">Linkedin</a>
   <a href="#contact" class="w3-button w3-bar-item">Contact</a>
 </nav>
 
 <section class="w3-container w3-center" style="max-width:600px">
-  <h2 class="w3-wide">Hi, my name is David Samuel</h2>
-  <p class="w3-opacity"><i>I am a Data Architect and Software Engineer</i></p>
+  <h1 class="w3-container w3-black">David Samuel's Portfolio</h2>
+    <img class="image" src="https://www.dropbox.com/s/u1dfelhcg707zzm/my_face.JPG?dl=1" alt="Portrait" style="width:25%"/>
+    <h2 class="w3-wide">Data Architect </h2>
+    <h3 class="w3-wide">Software Engineer</h3>
+    <h4 class="w3-wide">Founder of MusicMind Inc.</h4>
+  <p class="w3-opacity"><i>Below are some video and iOS applications I've developed for my graduate program at SMU</i></p>
 
 </section>
 
@@ -120,21 +127,29 @@ function createHTMLGradient(rows, cols, startColor, endColor){
 
 <body>
 
-<!-- Slide Show -->
-<section>
-  <img class="mySlides" src="https://www.dropbox.com/s/u1dfelhcg707zzm/my_face.JPG?dl=1"
-  style="width:100%">
-  <img class="mySlides" src="https://www.dropbox.com/s/f0ynerlyhol76yp/iPhone-7-Silver-vertical.psd?dl=1"
-  style="width:100%">
-  <img class="mySlides" src="https://www.dropbox.com/s/7qumbgss5k1mduy/ascii.PNG?dl=1"
-  style="width:100%">
-</section>
+<!-- Video -->
+<video width="400" autoplay loop muted>
+  <source src="https://www.dropbox.com/s/7lm1qcbodmtg9q7/short_viz.mp4?dl=1" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
-<script>
-    var c1 = new RGB(0, 0, 255);
-    var c2 = new RGB(255, 0, 0);
-    createHTMLGradient(60, 30, c1, c2);
-</script>
+<video width="600" controls autoplay loop muted>
+  <source src="https://www.dropbox.com/s/4z1mvj0ipvrdexy/ascii_movie.mp4?dl=1" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<iframe src="https://docs.google.com/presentation/d/1VrnpprugSjaYZdqVBUydUU1kX8XsYcxCDmAGM1tphs4/embed?start=true&loop=true&delayms=3000" frameborder="0" width="1401" height="1080" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-white w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">HTML and <i class="em em-heart"></i></a>
+  </p>
+</footer>
+
 </body>
 
 </html>
