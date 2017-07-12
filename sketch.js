@@ -18,7 +18,7 @@ var images = [];
 function setup() {
   createCanvas(800, 600);
 
-  img = loadImage("http://www.dropbox.com/s/r7mqvtuuu1es5lx/cool-180.png?dl=1");
+  img = loadImage("assets/images/48x48/1690.png");
 
   // particle setup
   for(var i=0; i<count; i++){
