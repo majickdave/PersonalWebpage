@@ -3,9 +3,12 @@
 <html>
 
 <head>
-  <script src="libraries/p5.min.js"></script>
-  <script src="sketch.js"></script>
-  <style> body {padding: 0; margin: 0;} </style>
+  <style>
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +29,9 @@
 
   <section class="w3-container w3-center" style="max-width:600px">
     <h1 class="w3-container w3-white">David Samuel's Portfolio</h2>
-      <img class="image" src="https://www.dropbox.com/s/u1dfelhcg707zzm/my_face.JPG?dl=1" alt="Portrait" style="width:25%"/>
+
+      <img class="w3-round-xlarge w3-card-4" src="https://www.dropbox.com/s/u1dfelhcg707zzm/my_face.JPG?dl=1" alt="Portrait" style="width:25%"/>
+
       <h2 class="w3-wide">Data Architect </h2>
       <h3 class="w3-wide">Software Engineer</h3>
       <h4 class="w3-wide">Founder of MusicMind Inc.</h4>
@@ -41,24 +46,27 @@
 <body>
 
 <!-- Video -->
-<video width="400" autoplay loop muted>
+<video class="w3-container" autoplay loop muted>
   <source src="https://www.dropbox.com/s/7lm1qcbodmtg9q7/short_viz.mp4?dl=1" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
-<video width="400" controls autoplay loop muted>
+<video controls autoplay loop muted>
   <source src="https://www.dropbox.com/s/4z1mvj0ipvrdexy/ascii_movie.mp4?dl=1" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+<div>
 
-<!-- MusicMind -->
-<iframe src="https://docs.google.com/presentation/d/1VrnpprugSjaYZdqVBUydUU1kX8XsYcxCDmAGM1tphs4/embed?start=true&loop=true&delayms=3000" frameborder="0" width="400" height="308" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  <!-- Google -->
+  <iframe src="https://docs.google.com/presentation/d/1VrnpprugSjaYZdqVBUydUU1kX8XsYcxCDmAGM1tphs4/embed?start=true&loop=true&delayms=3000" frameborder="0" width="600" height="465" allowfullscreen="true" safariallowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  <video controls>
+
+    <source src="https://www.dropbox.com/s/v3oufis06alyojv/musicmind_movie.mp4?dl=1" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
 
 
-<video width="400" controls>
-  <source src="https://www.dropbox.com/s/v3oufis06alyojv/musicmind_movie.mp4?dl=1" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
