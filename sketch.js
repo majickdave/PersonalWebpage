@@ -34,8 +34,8 @@ function setup() {
     spd.push(new p5.Vector(-2 + Math.random()*4, Math.random()*2));
     radii.push(random(5, 10));
     gravity.push(random(.01, .06));
-    friction = .875;
-    damping = .786;
+    friction = .811;
+    damping = .923;
   }
 
   
