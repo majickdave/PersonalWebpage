@@ -15,10 +15,12 @@ var number;
 var img;
 var images = []; 
 
+var scrolling=0;
+
 
 function setup() {
-  createCanvas(1200,800);
-  background(255);
+  createCanvas(displayWidth, displayHeight);
+  centerCanvas();
 
   // number = Math.floor(randomInt(1,2176));
 
@@ -38,13 +40,15 @@ function setup() {
     damping = .923;
   }
 
-  
-
 }
 
+
 function draw() {
+  centerCanvas();
   background(255);
   // fill(100, 255, 30);
+
+  scrolling += 1;
   
   for(var i=0; i<count; i++){
   	// kiwi = new image(img, width/2, height/2);
@@ -57,9 +61,11 @@ function draw() {
       checkCollisions(pos[i], spd[i], radii[i]);
   }
   fill(255);
+  if (scrolling > height){
+    scrolling = 0
+  }
   textSize(64);
-
-  text("Welcome to Music Translational Software", width/2, height/2, width/6, height/3);
+  text("Greetings Travelers", 100, scrolling, width/2);
 
 }
 
